@@ -1,0 +1,5 @@
+As	discussed	in	 the	session	on	Combinatorial	Pattern	Matching,	keywords	 trees
+provide	an	efficient	solution	to	search	for	multiple	k patterns	in	a	text	of	length	n.
+The	algorithm	requires	 first	 the	construction	of	a	keyword	 tree	and	 then,	using
+naïve	threading,	the	patterns	can	be	identified in	O(nm),	where	n is	the	average
+length	of	the	k patterns	and	m is	the	length	of	the	text.
