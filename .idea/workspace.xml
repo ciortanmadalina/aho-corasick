@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e096d9f-2dd4-4248-949f-7f7313e268cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algo.py" afterPath="$PROJECT_DIR$/algo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/AhoCorasickAlgorithm-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/AhoCorasickAlgorithm-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AhoCorasickAlgorithm.ipynb" afterPath="$PROJECT_DIR$/AhoCorasickAlgorithm.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
