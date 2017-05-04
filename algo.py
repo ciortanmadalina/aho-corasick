@@ -125,12 +125,13 @@ def createFailueFunction():
                     updateOutput(s, newOutputValue)
 
 
-def findInString(inputString):
+def findInString(inputString, outputFileName):
     '''
     Find all occurences of keywords in given inputString
     This method has to be called after createStateMachine
     '''
     state = 0
+    outputFile = open( outputFileName, 'w')
     for i in range(len(inputString)) :
         #failure function doesn't have a value for state 0 therefor make sure the
         #this loop doesn't execute the very first time
@@ -140,6 +141,7 @@ def findInString(inputString):
         state = g.get((state, inputString[i]), state)
         if output.get(state, None ) != None :
             print('\nIndex : %s , Output keywords %s \nActual text : %s' % (i, output[state], inputString[:i + 1]))
+            outputFile.write('Index: %s %s \n' % (i, output[state]))
 
 
 def readTextFromFile(filename):
@@ -170,4 +172,4 @@ createStateMachine(keywords)
 print( '>Go To Graph : %s \n>Ouput function : %s \n>Failure function : %s' % (g, output, failure))
 
 
-findInString(text)
+findInString(text, 'output')
